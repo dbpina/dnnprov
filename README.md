@@ -46,7 +46,6 @@ cd DfAnalyzer
 
 ```
 
-
 ## How to run DNN applications
 
 The DNNProv has a few predefined hyperparameters (e.g. optimizer, learning rate, number of epochs, number of layer, etc.) and metrics (e.g. loss, accuracy, elapsed time) to be captured. In the case that these hyperparameter ans metrics are enough, the user have to set the attribute “hyperparameters” as True, and the library will take care of it. It's importante to set a tag to identify the workflow and associate to the provenance data, e.g. hyperparameters. This method captures provenance data as the the deep learning workflow executes and sends them to the provenance database managed by MonetDB. As the data reaches the database, it can be analyzed through the Dataflow Viewer (DfViewer), Query Interface (QI), and Query Dashboard (QP). The data received by the provenance method are defined by the user in the source code of the DNN application, as follows:
